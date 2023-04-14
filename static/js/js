@@ -1,0 +1,28 @@
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 10000;
+
+valueDisplays.forEach((valueDisplays) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplays.getAttribute("data-val"));
+  let duration = Math.floor(interval/endValue);
+  let counter = setInterval(function(){
+    startValue += 10;
+    valueDisplays.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+      setTimeout(updateCounter, 40)
+    }
+    }, duration);
+});
+
+
+let navBar = document.querySelector('.navbar')
+
+window.addEventListener('scroll',()=>{
+if(window.scrollY>150){
+   navBar.classList.add('nav-scroll')
+}
+else{
+   navBar.classList.remove('nav-scroll')
+}
+})
