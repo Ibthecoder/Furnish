@@ -1,396 +1,533 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Furnish</title>
-   <link rel="stylesheet" href="static/css/style.css">
-   <link rel="stylesheet" href="static/css/bootstrap.min.css">
-   <!-- fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Roboto+Slab:wght@900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Furnish</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/bootstrap.min.css" />
+    <link
+      rel="shortcut icon"
+      href="static/images/logo1.png"
+      type="image/x-icon"
+    />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Merriweather:ital@1&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&family=Source+Sans+Pro:ital@1&display=swap"
+      rel="stylesheet"
+    />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap" rel="stylesheet">
- <!-- fonts -->
- <!-- icon -->
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-   <!-- navber-start -->
-   <nav class="navbar navbar-expand-lg fixed-top top-0 ">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anuphan&family=IBM+Plex+Sans+Arabic:wght@700&family=Libre+Baskerville:wght@700&family=Noto+Sans+SC:wght@100&family=Noto+Sans+Zanabazar+Square&family=Roboto+Slab:wght@900&family=Schibsted+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fonts -->
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- navber-start -->
+    <nav class="navbar navbar-expand-lg fixed-top top-0">
       <div class="container-fluid">
-         <a class="navbar-brand px-5 mx-5 navfnt fw-bold " href="index.html">Furnish
-         </a>
-         
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-         </button>
-   
-         <div class="collapse navbar-collapse nav-stl " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 gap-4  ">
-               <li class="nav-item">
-                  <a class="nav-link active navfnt fw-bold" aria-current="page" href="index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link active navfnt fw-bold" href="about.html">About</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link active navfnt fw-bold" href="Collection.html">Collection</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link active navfnt fw-bold" href="Blog.html">Blog</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link active navfnt fw-bold" href="contact.html">Contact</a>
-               </li>
-            </ul>
-         </div>
+        <a class="navbar-brand px-5 mx-5 navfnt fw-bold" href="index.html"
+          >Furnish
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse nav-stl"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 gap-4">
+            <li class="nav-item">
+              <a
+                class="nav-link active navfnt fw-bold"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navfnt fw-bold" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navfnt fw-bold" href="Collection.html"
+                >Collection</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navfnt fw-bold" href="Blog.html"
+                >Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navfnt fw-bold" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
-   </nav>
+    </nav>
     <!-- navber-end -->
 
-          <!-- contact-mani-page-start -->
+    <!-- contact-mani-page-start -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-12 about-img">
+            <div class="blog-line">
+              <a href="index.html"
+                >HOME <i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+              <p>
+                Contact<i class="fa fa-chevron-right" aria-hidden="true"></i>
+              </p>
+            </div>
+            <h1 class="our-b">CONTACT US</h1>
+          </div>
+        </div>
+      </div>
+    </main>
 
-          <div class="container-fluid">
+    <!-- contact-mani-page-end -->
+
+    <!-- map-start -->
+    <section>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126799.94336654953!2d3.085468997265622!3d6.708883700000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b995b41b7dd6d%3A0xb6c08985374e0e09!2sAptech%20Computer%20Education%20-Sango%20Ota!5e0!3m2!1sen!2sng!4v1681168851393!5m2!1sen!2sng"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- map-end-->
+
+    <!-- contact-us-map-start -->
+    <section style="margin-top: 15rem">
+      <div
+        class="container"
+        style="background-color: rgba(238, 240, 240, 0.394)"
+      >
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <h2 class="text-dark px-2 mt-3 navfnt">Contact us</h2>
+            <p class="text-dark px-2">
+              We're open for any suggestion or just to have a chat
+            </p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-dark fw-bold px-2">ADDRESS:</p>
+            <p class="text-dark">Sango ota Ogun state, Lagos Nigeria</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-dark fw-bold px-2">EMAIL:</p>
+            <p class="text-dark">+234 9011233223</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="text-dark fw-bold px-2">PHONE:</p>
+            <p class="text-dark">Oladipupoibrahim10@gmail.com</p>
+          </div>
+          <form action="">
             <div class="row">
-               <div class="col-md-12 col-sm-12 col-12 about-img">
-                  <div class="blog-line">
-                     <a href="index.html">HOME <i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                    <p>Contact<i class="fa fa-chevron-right" aria-hidden="true"></i></p>
-                  </div>
-                  <h1 class="our-b">CONTACT US</h1>
-               </div>
-            </div>
-         </div>
-
-           <!-- contact-mani-page-end -->
-
-           <!-- map-start -->
-           <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-12 col-sm-12 col-12">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126799.94336654953!2d3.085468997265622!3d6.708883700000023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b995b41b7dd6d%3A0xb6c08985374e0e09!2sAptech%20Computer%20Education%20-Sango%20Ota!5e0!3m2!1sen!2sng!4v1681168851393!5m2!1sen!2sng" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </div>
-            </div>
-           </div>
-              <!-- map-end-->
-
-
-              <!-- contact-us-map-start -->
-
-              <div class="container" style="background-color: rgba(238, 240, 240, 0.394);">
-               <div class="row">
-                  <div class="col-md-12 col-sm-12 col-12">
-                     <h2 class="text-dark px-2 mt-3 navfnt">Contact us</h2>
-                     <p class="text-dark px-2">We're open for any suggestion or just to have a chat</p>
-                  </div>
-
-                  <div class="col-md-4">
-                     <p class="text-dark fw-bold px-2">ADDRESS:</p>
-                     <p class="text-dark">Sango ota Ogun state, Lagos Nigeria</p>
-                  </div>
-
-                  <div class="col-md-4">
-                     <p class="text-dark fw-bold px-2">EMAIL:</p>
-                     <p class="text-dark">+234 9011233223</p>
-                  </div>
-
-                  <div class="col-md-4">
-                     <p class="text-dark fw-bold px-2">PHONE:</p>
-                     <p class="text-dark">Oladipupoibrahim10@gmail.com</p>
-                  </div>
-
-                  <div class="col-md-4 mt-4">
-                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name">
-                  </div>
-
-                  <div class="col-md-4 mt-4">
-                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Email">
-                  </div>
-
-
-                  <div class="col-md-4 mt-4">
-                     <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="subject">
-                  </div>
-
-                  <div class="col-md-12 mt-5">
-                     <textarea name="Message" id="exampleFormControlInput1" class="form-control" rows="7" placeholder="Creat a Message here"></textarea>
-                  </div>
-
-                   <div class="col-3 mt-3 px-3 col-sm-12 col-12"> 
-                     <button type="button" class="contact-btn">SEND MESSAGE</button>
-                       </div>
-               </div>
-
-               <div class="row">
-                  <div class="col-md-3 mt-5">
-                     <h2 class="text-dark px-3 mt-4">Follow us here</h2>
-                  </div>
-                  
-               </div>
-
-               <div class="col-md-3 mt-3 flow-c">
-                  <a href="https://github.com/ibtech-ng"> <P class="px-3 fw-bold">GITHUB</P></a>
-               </div>
-
-               
+              <div class="col-lg-4 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Name"
+                  required
+                />
               </div>
 
-
-              <div class="" style="padding: 5%;">
-               <p class="text-center text-dark">GALLERY</p>
-               <h1 class="text-center text-dark navfnt">Latest Collection</h1>
-
+              <div class="col-md-4 mt-4">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                  required
+                />
               </div>
 
-
-
-
-              <div class="container-fluid" style="background-color: rgba(238, 240, 240, 0.394);">
-               <div class="container">
-                  <div class="row">
-                     <!-- gallery-1 -->
-
-                     <div class="col-md-4 col-sm-12 col-12">
-                        <img class="img-fluid" src="static/images/blog-chair-5.jpg" alt="">
-                     </div>
-
-                     <div class="col-md-4 col-sm-12 col-12">
-                        <img class="img-fluid" src="static/images/blog-chair-6.jpg" alt="">
-
-                     </div>
-
-                     <div class="col-md-4 col-sm-12 col-12">
-                        <img class="img-fluid" src="static/images/game-chair.jpg" alt="">
-
-                     </div>
-
-                      <!-- gallery-1 -->
-
-
-
-                      <!-- gallery-2-->
-
-                     
-                     <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/boss-man-.jpg" alt="">
-
-                     </div>
-
-                     <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/boss-1.jpg" alt="">
-
-                     </div>
-
-                     <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/wom-1.jpg" alt="">
-
-                     </div>
-
-                     <!-- gallery-2-->
-
-
-                      <!-- gallery-3-->
-
-                      <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/man-.jpg" alt="">
-
-                     </div>
-
-
-                     <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/ofi.jpg" alt="">
-
-                     </div>
-
-                     <div class="col-md-4 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/re.jpg" alt="">
-
-                     </div>
-
-
-                     <!-- gallery-3-->
-
-                     <!--gallery-4 -->
-                     
-                     <div class="col-md-6 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/cc.jpg" alt="">
-
-                     </div> 
-
-
-                     <div class="col-md-6 col-sm-12 col-12 mt-3">
-                        <img  class="img-fluid" src="static/images/blog-chair-2.jpg" alt="">
-
-                     </div>
-
-                     <!--gallery-4 -->
-
-                  </div>
-               </div>
+              <div class="col-md-4 mt-4">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="subject"
+                  required
+                />
               </div>
 
-   
-<!-- footer-start -->
-
-
-<div class="container-fluid mt-4" style="background-color: rgb(171,214,235); padding: 8%; ">
-   <div class="row">
-      <div class="col-md-3 col-sm-12 col-12">
-         <h2 class="text-dark  ms-5 mt-5">Furnish</h2>
-         <p class="footer-ho ms-4 text-center m-4  ">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-         <div class="d-flex">
-            <div class="smallb1">
-               <p class="p-2"><a href="https://www.twitter.com/IBtechcode"> <i class="fa fa-twitter text-white fa-2x" aria-hidden="true"></i></a></p>
+              <div class="col-md-12 mt-5">
+                <textarea
+                  name="Message"
+                  id="exampleFormControlInput1"
+                  class="form-control"
+                  rows="7"
+                  required
+                  placeholder="Creat a Message here"
+                  style="resize: none"
+                ></textarea>
+              </div>
             </div>
-            <div class="smallb1">
-               <p class="p-1 ms-1"><a href="https://instagram.com/ibthecoder?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram text-white fa-2x" aria-hidden="true"></i></a></p>
-             
-            </div>
+          </form>
 
-            <div class="smallb1">
-               <p class="p-1"><a href="https://www.linkedin.com/in/oladipupo-ibrahim-165404251/"><i class="fa fa-linkedin text-white fa-2x " aria-hidden="true"></i></a></p>
-            </div>
-         </div>
+          <div class="col-3 mt-3 px-3 col-sm-12 col-12">
+            <button type="submit" class="contact-btn">SEND MESSAGE</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 mt-5">
+            <h2 class="text-dark px-3 mt-4">Follow us here</h2>
+          </div>
+        </div>
+
+        <div class="col-md-3 mt-3 flow-c">
+          <a href="https://github.com/ibtech-ng">
+            <p class="px-3 fw-bold">GITHUB</p></a
+          >
+        </div>
       </div>
+    </section>
 
-      <div class="col-md-3 col-sm-12 col-12">
-         <h2 class="text-dark  ms-5 mt-5">Services</h2>
-         <p class="ms-5 footer-ho"><i class="fa fa-arrow-right" aria-hidden="true"></i> Amazing Deals</p>
-         <p class="ms-5 footer-ho"><i class="fa fa-arrow-right" aria-hidden="true"></i> Quality Furniture</p>
-         <p class="ms-5 footer-ho"><i class="fa fa-arrow-right" aria-hidden="true"></i> Modern Design</p>
-         <p class="ms-5 footer-ho"><i class="fa fa-arrow-right" aria-hidden="true"></i> Best Support</p>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="" style="padding: 5%">
+      <p class="text-center text-dark">GALLERY</p>
+      <h1 class="text-center text-dark navfnt">Latest Collection</h1>
+    </div>
+
+    <section>
+      <div
+        class="container-fluid"
+        style="background-color: rgba(238, 240, 240, 0.394)"
+      >
+        <div class="container">
+          <div class="row">
+            <!-- gallery-1 -->
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <img
+                class="img-fluid"
+                src="static/images/blog-chair-5.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <img
+                class="img-fluid"
+                src="static/images/blog-chair-6.jpg"
+                alt=""
+              />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12">
+              <img
+                class="img-fluid"
+                src="static/images/game-chair.jpg"
+                alt=""
+              />
+            </div>
+
+            <!-- gallery-1 -->
+
+            <!-- gallery-2-->
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/boss-man-.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/boss-1.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/wom-1.jpg" alt="" />
+            </div>
+
+            <!-- gallery-2-->
+
+            <!-- gallery-3-->
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/man-.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/ofi.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/re.jpg" alt="" />
+            </div>
+
+            <!-- gallery-3-->
+
+            <!--gallery-4 -->
+
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+              <img class="img-fluid" src="static/images/cc.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 mt-3">
+              <img
+                class="img-fluid"
+                src="static/images/blog-chair-2.jpg"
+                alt=""
+              />
+            </div>
+
+            <!--gallery-4 -->
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="col-md-3 col-sm-12 col-12">
-         <h2 class="text-dark  ms-5 mt-5">Recent Posts</h2>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
-         <div class="">
-            <div class="d-flex gap-3">
-               <div class="foot-img">
-                  <img src="/static/images/blog-1.webp" alt="">
-               </div>
-   
-               <div class="d-flex">
-                  <p class="fw-bold"><i class="fa fa-calendar px-1 foot-cacu" aria-hidden="true"></i>Apri 10, 2023</p>
-                  <p class="fw-bold"><i class="fa fa-user px-1 foot-cacu" aria-hidden="true"></i>ADMIN</p>
-               </div>
-            </div> 
-            <p class="text-dark ms-5 px-5 footer-ho ">Shop the Look Cottage Country Living Room</p>
-         </div>
+    <!-- footer-start -->
+    <footer>
+      <div
+        class="container-fluid mt-4"
+        style="background-color: rgb(171, 214, 235); padding: 8%"
+      >
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <h2 class="text-dark ms-5 mt-5">Furnish</h2>
+            <p class="footer-ho ms-4 text-center m-4">
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia.
+            </p>
+            <div class="d-flex">
+              <div class="smallb1">
+                <p class="p-2">
+                  <a href="https://www.twitter.com/IBtechcode">
+                    <i
+                      class="fa fa-twitter text-white fa-2x"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </p>
+              </div>
+              <div class="smallb1">
+                <p class="p-1 ms-1">
+                  <a href="https://instagram.com/ibthecoder?igshid=YmMyMTA2M2Y="
+                    ><i
+                      class="fa fa-instagram text-white fa-2x"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </p>
+              </div>
 
+              <div class="smallb1">
+                <p class="p-1">
+                  <a
+                    href="https://www.linkedin.com/in/oladipupo-ibrahim-165404251/"
+                    ><i
+                      class="fa fa-linkedin text-white fa-2x"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </p>
+              </div>
+            </div>
+          </div>
 
-           <br> 
-         <div class="">
-            <div class="d-flex gap-3">
-               <div class="foot-img">
-                  <img src="/static/images/blog-2.webp" alt="">
-               </div>
-   
-               <div class="d-flex">
-                  <p class="fw-bold"><i class="fa fa-calendar px-1 foot-cacu" aria-hidden="true"></i>Apri 10, 2023</p>
-                  <p class="fw-bold"><i class="fa fa-user px-1 foot-cacu" aria-hidden="true"></i>ADMIN</p>
-               </div>
-            </div> 
-            <p class="text-dark ms-5 px-5 footer-ho ">Shop the Look Cottage Country Living Room</p>
-         </div>
-         
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <h2 class="text-dark ms-5 mt-5">Services</h2>
+            <p class="ms-5 footer-ho">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Amazing Deals
+            </p>
+            <p class="ms-5 footer-ho">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Quality
+              Furniture
+            </p>
+            <p class="ms-5 footer-ho">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Modern Design
+            </p>
+            <p class="ms-5 footer-ho">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i> Best Support
+            </p>
+          </div>
 
-          
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <h2 class="text-dark ms-5 mt-5">Recent Posts</h2>
+
+            <div class="">
+              <div class="d-flex gap-3">
+                <div class="foot-img">
+                  <img src="/static/images/blog-1.webp" alt="" />
+                </div>
+
+                <div class="d-flex">
+                  <p class="fw-bold">
+                    <i
+                      class="fa fa-calendar px-1 foot-cacu"
+                      aria-hidden="true"
+                    ></i
+                    >Apri 10, 2023
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fa fa-user px-1 foot-cacu" aria-hidden="true"></i
+                    >ADMIN
+                  </p>
+                </div>
+              </div>
+              <p class="text-dark ms-5 px-5 footer-ho">
+                Shop the Look Cottage Country Living Room
+              </p>
+            </div>
+
+            <br />
+            <div class="">
+              <div class="d-flex gap-3">
+                <div class="foot-img">
+                  <img src="/static/images/blog-2.webp" alt="" />
+                </div>
+
+                <div class="d-flex">
+                  <p class="fw-bold">
+                    <i
+                      class="fa fa-calendar px-1 foot-cacu"
+                      aria-hidden="true"
+                    ></i
+                    >Apri 10, 2023
+                  </p>
+                  <p class="fw-bold">
+                    <i class="fa fa-user px-1 foot-cacu" aria-hidden="true"></i
+                    >ADMIN
+                  </p>
+                </div>
+              </div>
+              <p class="text-dark ms-5 px-5 footer-ho">
+                Shop the Look Cottage Country Living Room
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-12 col-sm-12 col-12">
+            <h2 class="text-dark ms-5 mt-5">Have a Questions?</h2>
+            <div class="d-flex ms-5 mt-3">
+              <p>
+                <i class="fa fa-map fa-2x foot-cacu" aria-hidden="true"></i>
+              </p>
+              <p class="ms-3 footer-">Sango ota ogun state, Nigeria..</p>
+            </div>
+
+            <div class="d-flex ms-5 mt-3">
+              <a href="tel: +234 9011233223" class="phone-link"
+                ><i class="fa fa-phone fa-2x" aria-hidden="true"></i
+              ></a>
+              <p class="ms-3 footer-">+234 9011233223</p>
+            </div>
+
+            <div class="d-flex ms-5 mt-3">
+              <p>
+                <i
+                  class="fa fa-paper-plane fa-2x foot-cacu"
+                  aria-hidden="true"
+                ></i>
+              </p>
+              <p class="ms-3 footer-">oladipupoibrahim10@gmail.com</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </footer>
+    <!-- footer-end -->
 
-      <div class="col-md-3 col-sm-12 col-12">
-         <h2 class="text-dark  ms-5 mt-5">Have a Questions?</h2>
-            <div class="d-flex ms-5 mt-3">
-               <p><i class="fa fa-map fa-2x foot-cacu" aria-hidden="true"></i></p>
-               <p class="ms-3  footer-">Sango ota ogun state, Nigeria..</p>
-            </div>
-
-            <div class="d-flex ms-5 mt-3">
-            <a href="tel: +234 9011233223" class="phone-link"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a>
-            <p class="ms-3 footer-">+234 9011233223</p>
-            </div>
-
-            <div class="d-flex ms-5 mt-3">
-               <p><i class="fa fa-paper-plane fa-2x foot-cacu" aria-hidden="true"></i></p>
-               <p class="ms-3 footer-">oladipupoibrahim10@gmail.com</p>
-            </div>
-         </div>
-   </div>
-</div>
-
-<!-- footer-end -->
-
-
-<!-- last-footer-start -->
-<div class="container-fluid" style="background-color: rgb(129,194,226); padding: 3%;">
-   <div class="row">
-      <div class="col-md-8 col-sm-12 col-12 ms-auto ">
-         <p class="text-dark mt-5 ">Copyright ©2023 All rights reserved | This template is made with <i class="fa fa-heartbeat fa-1x " aria-hidden="true "></i> by Ibtech</p>
-       </div>
-   </div>
-</div>
-<!-- last-footer-end -->
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- last-footer-start -->
+    <div
+      class="container-fluid"
+      style="background-color: rgb(129, 194, 226); padding: 3%"
+    >
+      <div class="row">
+        <div class="col-md-8 col-sm-12 col-12 ms-auto">
+          <p class="text-dark mt-5">
+            Copyright ©2023 All rights reserved | This template is made with
+            <i class="fa fa-heartbeat fa-1x" aria-hidden="true "></i> by Ibtech
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- last-footer-end -->
 
     <script src="static/js/js"></script>
-   <script src="static/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="static/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
